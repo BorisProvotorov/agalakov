@@ -1,0 +1,21 @@
+.section-title {
+    font-family: 'Oswald';
+    font-size: 36px; 
+    line-height: 53px;
+    font-weight:  500;
+    text-transform: uppercase;
+    margin-top: 80px;
+    text-align: center;
+    margin: 100px auto 80px auto;
+    max-width: 730px;
+    color: $Dark;
+}
+
+@media(max-width: 1024px) {
+    .section-title {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        font-size: 22px;
+        line-height: 33px;
+    }
+}

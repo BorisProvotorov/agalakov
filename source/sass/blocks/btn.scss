@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    background-color: $Accent;
+    color: $White;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 40px;
+    border: none;
+    transition: background-color .2s;
+    cursor: pointer;
+
+    &:hover {
+    	background-color: #6788CB;
+    }
+
+    &:active,
+    &:focus {
+        outline: 0;
+        background-color: #7E6792;
+    }
+
+}
+
+@media (max-width: 767px)  {
+    .btn {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 12px 40px;
+    }
+}

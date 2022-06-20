@@ -1,0 +1,110 @@
+.gallery {
+    overflow: hidden;
+    padding-bottom: 0;
+    
+    &__slider {
+        margin: 0 -10px;
+    }
+
+    &__img {
+        height: 465px;
+    }
+
+     &__img img {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+
+     .slick-slide {
+        margin: 0 10px;
+     }
+
+     .slick-slide:focus {
+        outline: none;
+     }
+
+     &__item-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        border: 10px solid #e0e0e0;
+        border-top: none;
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 100px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        margin-left: 20px;
+     }
+}
+
+.gallery__nav {
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__arrow {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/ico-slide-arrows.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 26px;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+
+.gallery__arrow:hover {
+    opacity: 0.4;
+}
+
+.gallery__arrow--next {
+    transform: rotate(180deg);
+}
+
+
+@media(max-width: 767px) {
+
+    .gallery {
+        margin: 0 20px 40px 20px;
+        position: relative;
+    }
+
+    .gallery__nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 60px;
+    }
+
+    .gallery__slider {
+        margin-top: 55px;
+    }
+
+    .gallery__img {
+        height: 380px;
+    }
+
+    .gallery__item-title {
+        margin-left: 0;
+        border-width: 6px;
+        padding: 11px 40px 11px 10px;
+    }
+}
+
+@media(max-width: 568px) {
+
+    .gallery__img {
+        height: 380px;
+    }
+}
+
+
+@media(max-width: 480px) {
+    .gallery__img {
+        height: 208px;
+    }
+}

@@ -1,0 +1,73 @@
+.sale {
+    background-color: $Accent;
+    color: $White;
+    font-family: Oswald;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.sale__row {
+    display: flex;
+    align-items: center;
+}
+
+.sale__left {
+    flex-grow: 1;
+}
+
+.sale__right {
+    position: relative;
+    top: 7px;
+    flex-shrink: 0;
+}
+
+.sale__title {
+    font-size: 48px;
+    line-height: 70px;
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+}
+
+.sale__descr {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+}
+
+.sale__percent {
+    font-size: 97px;
+    line-height: 144px;
+    letter-spacing: 0.02em;
+}
+
+.sale__unit {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+
+@media(max-width: 767px) {
+
+    .sale {
+        padding-top: 30px;
+    }
+
+    .sale__row {
+        flex-direction: column;
+    }
+
+    .sale__right {
+        align-self: flex-end;
+    }
+
+    .sale__title {
+        font-size: 30px;
+        line-height: 44px;
+        margin-bottom: 30px;
+    }
+
+    .sale__descr {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}

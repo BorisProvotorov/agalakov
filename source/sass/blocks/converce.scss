@@ -1,0 +1,121 @@
+.converce {
+    min-height: 623px;
+    
+    &__title {
+        font-family: Oswald;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 71px;
+        color: #ffffff;
+        max-width: 428px;
+        text-transform: uppercase;
+        margin-top: 184px;
+        margin-left: 20%;
+        padding-right: 30px;
+    }
+    
+    &__left {
+        flex-grow: 1;
+    }
+
+    &__flex {
+        display: flex;
+    }
+
+    &__form-converce {
+        margin-top: 30px;
+        margin-right: 35px;
+    }
+
+    @media(min-width: 1070px ) {
+        & {
+            background-image: url(../img/vendor/bg-converce.jpg);
+            background-size: cover;
+        }
+        
+    }
+
+    @media(max-width: 1070px ) {
+
+        & {
+            background-image: url("../img/vendor/bg-converce-tablet.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__title {
+            margin-left: 0;
+            padding-right: 20px;
+        }
+
+        &__form-converce {
+            margin-right: 0;
+        }
+
+    }
+
+    @media(max-width: 1024px ) {
+        
+        & {
+            padding-bottom: 80px;
+        }    
+
+        &__flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            padding-right: 0;
+            text-align: center;
+            max-width: 628px;
+            margin-top: 88px;
+        }
+    }
+
+    @media(max-width: 767px ) {
+
+        & {
+            background-image: url("../img/vendor/bg-converce-mobile.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 50px;
+            
+             &:after {
+                content: "";
+                position: absolute;
+                top: 277px;
+                left: 50%;
+                margin-left: -285px;
+                background: rgba(0,0,0,.5);
+                width: 570px;
+                height: 570px;
+                border-radius: 100%;
+                z-index: 0;
+            }
+        }
+
+        &__title {
+            margin-top: 128px;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 500;
+            max-width: 250px;
+        }
+
+        &__form-converce {
+            padding-top: 0;
+            margin-top: 65px;
+        }
+
+        &__right {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            padding: 0 30px;
+        }
+
+    }
+}

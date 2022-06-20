@@ -1,0 +1,22 @@
+.logo {
+    font-size: 16px;
+    line-height: 26px;
+    color: $White;
+    font-family: 'Oswald';
+    font-weight: 400;
+    padding-right: 10px;
+    
+    &__name {
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .logo {
+        font-size: 12px;
+        line-height: 16px;
+        padding-right: 0;
+    }
+         
+}

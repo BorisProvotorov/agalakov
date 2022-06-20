@@ -1,0 +1,92 @@
+.services {
+    padding-bottom: 90px;
+    
+    &__section-title {
+        margin-bottom: 60px;
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 - 10px;
+    }
+
+    &__col {
+        flex-grow: 1;
+        max-width: 25%;
+        flex-basis: 25%;
+        padding: 0 10px;
+        display: flex;
+    }
+
+    &__item {
+        padding: 100px 20px 50px 20px;
+        background-color: #F7F7F7;
+        background-repeat: no-repeat;
+        flex-grow: 1;
+    }
+
+    &__title {
+        font-family: Oswald;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 31px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 20px;
+        max-width: 200px;
+        margin: 15px auto 0 auto;
+    }
+
+    &__descr {
+        color: $Gray;
+    }
+
+
+    &__item--montage {
+        background-image: url("../img/vendor/services/ico-1.svg");
+        background-position: center 50px;
+    }
+
+    &__item--repair {
+        background-image: url("../img/vendor/services/ico-2.svg");
+        background-position: center 48px;
+    }
+
+    &__item--facades {
+        background-image: url("../img/vendor/services/ico-3.svg");
+        background-position: center 60px;
+    }
+
+    &__item--area {
+        background-image: url("../img/vendor/services/ico-4.svg");
+        background-position: center 50px;
+    }
+
+    @media(max-width: 992px) {
+        &__col {
+            max-width: 50%;
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    @media(max-width: 767px) {
+        
+        & {
+            padding-bottom: 30px;
+        }
+
+        &__col {
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+
+        &__section-title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+

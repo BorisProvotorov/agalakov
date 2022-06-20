@@ -1,0 +1,113 @@
+.contacts {
+    padding-bottom: 22px;
+}
+
+.contacts__section-title {
+    margin-bottom: 36px;
+}
+
+
+.contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 920px;
+}
+
+.contacts__col {
+    flex-grow: 1;
+    max-width: 33%;
+    flex-basis: 33%;
+    padding: 0 10px;
+    display: flex;
+}
+
+.contacts__item {
+    padding: 100px 0 50px 0;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.contacts__item--map {
+    background-image: url("../img/ico-map.svg");
+    background-position: center 32px;
+}
+
+.contacts__item--phone {
+    background-image: url("../img/ico-phone.svg");
+    background-position: center 32px;
+}
+
+.contacts__item--email {
+    background-image: url("../img/ico-email.svg");
+    background-position: center 39px;
+}
+
+.contacts__title {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: Oswald;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $Gray;
+    margin: 0 0 16px 0;
+}
+
+
+.contacts__info {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: Oswald;
+    font-weight: 500;
+    color: #333333;
+}
+
+
+.contacts__info a {
+    color: #333333;
+    text-decoration: none;
+}
+
+@media(max-width: 767px) {
+    .contacts__title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    } 
+
+    .contacts__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts__info {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .contacts__col {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contacts__item {
+        padding-bottom: 25px;
+        padding-top: 55px;
+    }
+
+    .contacts__item--map {
+        background-size: 28px;
+        background-position: center 0;    
+    }
+    .contacts__item--phone {
+        background-size: 38px;
+        background-position: center 0;    
+    }
+    .contacts__item--email {
+        background-size: 38px;
+        background-position: center 10px;
+    }
+}

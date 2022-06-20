@@ -1,0 +1,27 @@
+.footer {
+    background-color: $Dark;
+    color: $White;
+    
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        flex-wrap: wrap;
+    } 
+}
+
+@media(max-width: 767px) {
+    .footer {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .footer__flex {
+        padding: 14px 0;
+    }
+
+    .footer__copyright {
+        margin-bottom: 4px;
+    }
+}
